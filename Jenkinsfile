@@ -31,6 +31,7 @@ pipeline{
 
           // Running Terraform Operations
           sh '''
+          export KOYEB_TOKEN=$KOYEB_TOKEN
           terraform init
           terraform fmt
           terraform validate
