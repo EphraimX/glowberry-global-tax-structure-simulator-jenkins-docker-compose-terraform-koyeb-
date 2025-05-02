@@ -14,15 +14,18 @@ pipeline {
             set -e
             if [ ! -f terraform ]; then
               echo "Downloading Terraform binary..."
-              curl -fsSL https://releases.hashicorp.com/terraform/1.7.5/terraform_1.7.5_linux_amd64.zip -o terraform.zip
+              curl -fsSL https://releases.hashicorp.com/terraform/1.11.4/terraform_1.11.4_linux_amd64.zip -o terraform.zip
               unzip terraform.zip
               chmod +x terraform
               rm terraform.zip
             fi
 
             ./terraform version
-            # ./terraform init
-            # ./terraform apply -auto-approve
+            terraform init
+            terraform fmt
+            terraform validate
+            terraform plan
+            terraform apply --auto-approve
           '''
         }
       }
