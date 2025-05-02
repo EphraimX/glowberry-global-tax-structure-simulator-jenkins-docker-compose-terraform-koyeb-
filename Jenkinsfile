@@ -3,14 +3,14 @@ pipeline{
   agent any
 
   environment {
-    KOYEB_API_TOKEN = credentials('KOYEB_API_TOKEN')
+    KOYEB_TOKEN = credentials('KOYEB_TOKEN')
   }
 
   stages {
 
     stage('Koyeb Setup and Deploy Job'){
       steps{
-        dir(terraform){
+        dir('terraform'){
           // sh 'apt install curl' #Remove comment if curl is not installed on host system
 
           // Installing Terraform
