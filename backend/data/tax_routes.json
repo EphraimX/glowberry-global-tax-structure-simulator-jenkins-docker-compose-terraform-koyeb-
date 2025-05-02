@@ -1,0 +1,58 @@
+[
+  {
+      "origin": "US",
+      "path": ["US", "Ireland", "Bermuda"],
+      "strategy": "Double Irish",
+      "tags": ["IP shifting", "royalty payments"],
+      "aggressiveness": "high"
+  },
+  {
+      "origin": "Germany",
+      "path": ["Germany", "Netherlands", "Curaçao"],
+      "strategy": "Dutch Sandwich",
+      "tags": ["licensing", "holding company"],
+      "aggressiveness": "medium"
+  },
+  {
+      "origin": "Nigeria",
+      "path": ["Nigeria", "Mauritius", "UAE"],
+      "strategy": "Treaty routing with IP shelter",
+      "tags": ["capital flow", "IP licensing"],
+      "aggressiveness": "high"
+  },
+  {
+      "origin": "France",
+      "path": ["France", "Switzerland", "Jersey"],
+      "strategy": "SPV and trust-based wealth routing",
+      "tags": ["trusts", "wealth management"],
+      "aggressiveness": "medium"
+  },
+  {
+      "origin": "Egypt",
+      "path": ["Egypt", "Cyprus", "British Virgin Islands"],
+      "strategy": "Dividend and equity routing through treaty hub",
+      "tags": ["dividends", "equity extraction"],
+      "aggressiveness": "medium"
+  },
+  {
+      "origin": "India",
+      "path": ["India", "Mauritius", "Singapore"],
+      "strategy": "Capital gains shielding using outdated treaty",
+      "tags": ["equity routing", "investment flows"],
+      "aggressiveness": "medium"
+  },
+  {
+      "origin": "UK",
+      "path": ["UK", "Luxembourg", "Cayman Islands"],
+      "strategy": "Hybrid Lux entities and non-dom rules",
+      "tags": ["interest income", "fund flows"],
+      "aggressiveness": "high"
+  },
+  {
+      "origin": "Canada",
+      "path": ["Canada", "Barbados", "Panama"],
+      "strategy": "Treaty shopping through Caribbean",
+      "tags": ["management fees", "consulting flows"],
+      "aggressiveness": "medium"
+  }
+]
