@@ -21,11 +21,11 @@ pipeline {
             fi
 
             ./terraform version
-            terraform init
-            terraform fmt
-            terraform validate
-            terraform plan
-            terraform apply --auto-approve
+            ./terraform init
+            ./terraform fmt
+            ./terraform validate
+            ./terraform plan
+            ./terraform apply --auto-approve
           '''
         }
       }
